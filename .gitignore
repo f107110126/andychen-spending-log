@@ -1,0 +1,17 @@
+/app-src/composer.lock
+/app-src/node_modules
+/app-src/package-lock.json
+/app-src/public/hot
+/app-src/public/storage
+/app-src/storage/*.key
+/app-src/vendor
+/app-src/.env
+/app-src/.env.backup
+/app-src/.phpunit.result.cache
+/app-src/docker-compose.override.yml
+/app-src/Homestead.json
+/app-src/Homestead.yaml
+/app-src/npm-debug.log
+/app-src/yarn-error.log
+/.idea
+/.vscode
