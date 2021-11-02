@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="andychen-spending-log">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/app-src/bootstrap/cache" />
+            <excludedPath local="true" path="$PROJECT_DIR$/app-src/node_modules" />
+            <excludedPath local="true" path="$PROJECT_DIR$/app-src/storage" />
+            <excludedPath local="true" path="$PROJECT_DIR$/app-src/vendor" />
+            <excludedPath local="true" path="$PROJECT_DIR$/app-src/.env" />
+            <excludedPath local="true" path="$PROJECT_DIR$/app-src/.env.example" />
+            <excludedPath local="true" path="$PROJECT_DIR$/app-src/composer.lock" />
+            <excludedPath local="true" path="$PROJECT_DIR$/app-src/package-lock.json" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.editorconfig" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitattributes" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.styleci.yml" />
+            <excludedPath local="true" path="$PROJECT_DIR$/README.md" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
