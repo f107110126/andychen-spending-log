@@ -21,6 +21,9 @@
             <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
             <excludedPath local="true" path="$PROJECT_DIR$/.styleci.yml" />
             <excludedPath local="true" path="$PROJECT_DIR$/README.md" />
+            <excludedPath path="/.ftpquota" />
+            <excludedPath path="/.well-known" />
+            <excludedPath path="/cgi-bin" />
           </excludedPaths>
         </serverdata>
       </paths>
