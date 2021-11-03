@@ -15,15 +15,21 @@
             <excludedPath local="true" path="$PROJECT_DIR$/app-src/.env" />
             <excludedPath local="true" path="$PROJECT_DIR$/app-src/.env.example" />
             <excludedPath local="true" path="$PROJECT_DIR$/app-src/composer.lock" />
+            <excludedPath local="true" path="$PROJECT_DIR$/app-src/deployment.xml" />
             <excludedPath local="true" path="$PROJECT_DIR$/app-src/package-lock.json" />
             <excludedPath local="true" path="$PROJECT_DIR$/.editorconfig" />
             <excludedPath local="true" path="$PROJECT_DIR$/.gitattributes" />
             <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
             <excludedPath local="true" path="$PROJECT_DIR$/.styleci.yml" />
             <excludedPath local="true" path="$PROJECT_DIR$/README.md" />
+            <excludedPath path="/app-src/bootstrap/cache" />
+            <excludedPath path="/app-src/storage" />
+            <excludedPath path="/app-src/vendor" />
+            <excludedPath path="/app-src/.env" />
             <excludedPath path="/.ftpquota" />
             <excludedPath path="/.well-known" />
             <excludedPath path="/cgi-bin" />
+            <excludedPath path="/error_log" />
           </excludedPaths>
         </serverdata>
       </paths>
