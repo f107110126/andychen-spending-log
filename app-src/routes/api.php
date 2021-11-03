@@ -19,12 +19,15 @@ Route::middleware('force-json')->group(function () {
     Route::post('/register', 'Auth\RegisterController@register');
     Route::post('/logout', 'Auth\LoginController@logout');
 
-    // defaulut route in laravel 8.54
-    Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-        return $request->user();
-    });
+    Route::middleware('auth:api')->group(function () {
+        Route::get('/user', function (Request $request) {
+            return $request->user();
+        });
 
-    Route::middleware('auth:api')->get('/user', function (Request $request) {
-        return $request->user();
+        Route::get('categories/expense', 'CategoryController@listExpense');
+
+        Route::get('categories/income', 'CategoryController@listIncome');
+
+        Route::apiResource('categories', 'CategoryController');
     });
 });
