@@ -14,12 +14,29 @@ class CategoryController extends Controller
         return Category::all();
     }
 
+    public function listExpense()
+    {
+        return Category::where('type', 'expense')
+            ->get();
+    }
+
+    public function listIncome()
+    {
+        return Category::where('type', 'income')
+            ->get();
+    }
+
     public function store(Request $request)
     {
         $validated = $this->validateCategory($request->toArray());
         $category = new Category($validated);
         $category->forceFill($validated);
         $category->save();
+        return $category;
+    }
+
+    public function show(Category $category)
+    {
         return $category;
     }
 
@@ -30,7 +47,7 @@ class CategoryController extends Controller
             'default' => ['nullable'],
             'color' => ['nullable'],
             'icon' => ['nullable'],
-            'type' => ['required', 'regex:/^(income|expense|transfer)$/i'], // income, expense, transfer
+            'type' => ['required', 'regex:/^(income|expense)$/i'], // income, expense
             'name' => ['required']
         ];
     }

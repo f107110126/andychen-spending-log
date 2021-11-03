@@ -24,6 +24,10 @@ Route::middleware('force-json')->group(function () {
             return $request->user();
         });
 
+        Route::get('categories/expense', 'CategoryController@listExpense');
+
+        Route::get('categories/income', 'CategoryController@listIncome');
+
         Route::apiResource('categories', 'CategoryController');
     });
 });
